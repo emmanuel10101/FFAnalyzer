@@ -1,0 +1,56 @@
+/*
+#3C3744
+#3D52D5
+#B4C5E4
+*/
+
+body {
+    background-color: #3C3744;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#hero {
+    text-align: center;
+    padding: 5rem;
+    
+}
+
+#hero > h3 {
+    margin-top: 0;
+}
+
+#hero > h1 {
+    margin-bottom: 0;
+}
+
+#hero img {
+    border-radius: 20px;
+}
+
+hr {
+    border-radius: 100%;
+    width: 50%;
+}
+
+#experience-title {
+    text-align: center;
+}
+
+.experience {
+    width: 20rem;
+    margin: 1rem;
+    
+    padding: 1rem;
+    border-width: 1px;
+    border-style: dashed;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+#experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

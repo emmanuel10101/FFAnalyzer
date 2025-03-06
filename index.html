@@ -12,8 +12,8 @@
         <p>Your ultimate tool to analyze player performance and make winning decisions for your fantasy team!</p>
     </header>
 
-    <!-- Filter Section -->
-    <section id="filters">
+    <!-- Search Section -->
+    <section id="search">
         <h2>Search Player Performance</h2>
         <p>Use the filters below to narrow down player performance stats by position, team, and date range. Hit "Analyze Performance" to see detailed results.</p>
         <form id="filter-form">
@@ -25,22 +25,20 @@
                     <option value="RB">Running Back (RB)</option>
                     <option value="WR">Wide Receiver (WR)</option>
                     <option value="TE">Tight End (TE)</option>
-                    <!-- Add more positions later -->
                 </select>
             </div>
 
             <div class="filter-group">
-                <label for="player">Players
-                     :</label>
+                <label for="player">Player:</label>
                 <input type="text" id="player" name="player" placeholder="Enter Player Name">
             </div>
 
             <div class="filter-group">
                 <label for="date-range">Date Range:</label>
                 <input type="date" id="start-date" name="start-date">
-                Start Date
+                <span>Start Date</span>
                 <input type="date" id="end-date" name="end-date">
-                End Date
+                <span>End Date</span>
             </div>
 
             <button type="submit">Analyze Performance</button>
@@ -60,7 +58,6 @@
                     <th>Games Played</th>
                     <th>Yards</th>
                     <th>Touchdowns</th>
-                    <!-- Add more stats later -->
                 </tr>
             </thead>
             <tbody>
@@ -86,7 +83,7 @@
     </section>
 
     <footer>
-        Fantasy Football Performance Analyzer &copy; 2025 | Created by Emmanuel Michael
+        <p>Fantasy Football Performance Analyzer &copy; 2025 | Created by <a href="contact.html">Emmanuel Michael</a></p>
     </footer>
 </body>
 </html>

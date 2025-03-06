@@ -3,65 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel's Personal Website</title>
+    <title>Fantasy Football Analyzer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: wheat;">
-    
-    <div id="hero">
-        <h1>Emmanuel Michael</h1>
-        <h2>Computer Science Student</h2>
-        <p>
-            Hello! My name is Emmanuel Michael, I am a computer science student
-            at the University of Maryland. I enjoy playing basketball, coding,
-            and trying new things.
-        </p>
-        <img width="250px" src="/Downloads/axethrowing.png" alt="Headshot of Emmanuel">
-    </div>
-    
-    <hr>
+<body>
+    <header>
+        <h1>Fantasy Football Performance Analyzer</h1>
+        <p>Your ultimate tool to analyze player performance and make winning decisions for your fantasy team!</p>
+    </header>
 
-    <div>
-        <h1 style="text-align:center">Experiences</h1>
-        <div id="experience-container">
-
-            <div class="experience">
-                <h2>Name of the Experience</h2>
-                <h4>Title of position</h4>
-                <ul> <!--unordered list -->
-                    <li>Experience 1</li>
-                    <li>Experience 2</li>
-                    <li>Experience 3</li>
-                </ul>
-            </div>
-        
-            <div class="experience">
-            <h2>Name of the Experience</h2>
-                <h4>Title of position</h4>
-                <ul> <!--unordered list -->
-                    <li>Experience 1</li>
-                    <li>Experience 2</li>
-                    <li>Experience 3</li>
-                </ul>
+    <!-- Filter Section -->
+    <section id="filters">
+        <h2>Search Player Performance</h2>
+        <p>Use the filters below to narrow down player performance stats by position, team, and date range. Hit "Analyze Performance" to see detailed results.</p>
+        <form id="filter-form">
+            <div class="filter-group">
+                <label for="position">Position:</label>
+                <select id="position" name="position">
+                    <option value="all">All</option>
+                    <option value="QB">Quarterback (QB)</option>
+                    <option value="RB">Running Back (RB)</option>
+                    <option value="WR">Wide Receiver (WR)</option>
+                    <option value="TE">Tight End (TE)</option>
+                    <!-- Add more positions later -->
+                </select>
             </div>
 
-            <div class="experience">
-                <h2>Name of the Experience</h2>
-                <h4>Title of position</h4>
-                <ul> <!--unordered list -->
-                    <li>Experience 1</li>
-                    <li>Experience 2</li>
-                    <li>Experience 3</li>
-                </ul>
+            <div class="filter-group">
+                <label for="player">Players
+                     :</label>
+                <input type="text" id="player" name="player" placeholder="Enter Player Name">
             </div>
-        
-        </div>
-    </div>
 
-    <hr>
-    
+            <div class="filter-group">
+                <label for="date-range">Date Range:</label>
+                <input type="date" id="start-date" name="start-date">
+                Start Date
+                <input type="date" id="end-date" name="end-date">
+                End Date
+            </div>
+
+            <button type="submit">Analyze Performance</button>
+        </form>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results">
+        <h2>Performance Data</h2>
+        <p>Below is the performance data for players based on your selected filters. You can analyze metrics such as games played, yards, and touchdowns.</p>
+        <table id="performance-table">
+            <thead>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Position</th>
+                    <th>Team</th>
+                    <th>Games Played</th>
+                    <th>Yards</th>
+                    <th>Touchdowns</th>
+                    <!-- Add more stats later -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data -->
+                <tr>
+                    <td>Patrick Mahomes</td>
+                    <td>QB</td>
+                    <td>Kansas City Chiefs</td>
+                    <td>5</td>
+                    <td>1500</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Hingle McCringleberry</td>
+                    <td>TE</td>
+                    <td>Riverside Rhinos</td>
+                    <td>5</td>
+                    <td>1200</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <footer>
-        <a href="contact.html">Contact Info</a>
+        Fantasy Football Performance Analyzer &copy; 2025 | Created by Emmanuel Michael
     </footer>
 </body>
 </html>
